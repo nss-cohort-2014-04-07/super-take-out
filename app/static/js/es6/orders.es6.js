@@ -50,7 +50,7 @@
   }
 
   function add(){
-    var item = $('form#order > .menu-item:first-child');
+    var item = $('form#order > .menu-item:last-child');
     $('form#order').append(item.clone());
   }
 

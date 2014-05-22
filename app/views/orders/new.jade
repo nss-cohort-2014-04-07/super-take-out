@@ -8,15 +8,16 @@ block content
 
   button#add Add Row
 
-  form#order
+  form#order(action='/orders', method='post')
+    button Order Food
     .menu-item
       a.nuke(href='#') x
       input(type='number', name='qty')
-      select.menu(name='menu')
+      select.menu
         option Select a Menu
           each menu in menus
             option= menu
-      select.dish(name='dish')
+      select.dish(name='dishId')
         option Select a Dish
 
 block scripts

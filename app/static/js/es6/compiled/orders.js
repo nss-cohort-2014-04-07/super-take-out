@@ -39,7 +39,7 @@
     $('#total').text('$' + total.toFixed(2));
   }
   function add() {
-    var item = $('form#order > .menu-item:first-child');
+    var item = $('form#order > .menu-item:last-child');
     $('form#order').append(item.clone());
   }
   function delMenu(e) {
